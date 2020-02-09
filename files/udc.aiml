@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    <template>Hi I am justanotherbot ask me some things...</template>
+    <category>
+        
+        <pattern>Hello there</pattern>
+        <template>General Konobi</template>
+        
+        
+    </category>
+    
+    <category>
+        <pattern> My name is * </pattern>
+        <template> Hi there General Konobi... I mean <set name="name"><star/></set>
+        </template>
+    </category>
+    
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    
+    <pattern>Hi</pattern>
+    <template>Hello, how are you?</template>
+   
   </category>
+  
+  <category>
+      <pattern>*</pattern>
+    <template>I'm sorry I don't understand</template>
+    
+    </category>
+    
+    <category>
+         <pattern>Do you know who * is</pattern>
+    <template>Sorry, I don't know who <star> </star> is </template>
+        
+    </category>
 </aiml>
